@@ -1,0 +1,144 @@
+
+
+
+main{
+background-color: rgb(230, 218, 206);
+padding: 120px 0px 80px 0px;
+}
+
+.project-center{
+    width: 55%;
+    margin: auto;
+}
+
+.project{
+    text-align: center;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+}
+
+.project h2{
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.project h2 span{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    height: 20px;
+    background-color: blue;
+}
+
+.project-first{
+    display: flex;
+    margin-bottom: 70px;
+    box-shadow: 6px 6px 14px gray;
+    /* box-shadow: ; */
+}
+
+.project-summary{
+    width: 60%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.project-img{
+    width: 40%;
+}
+
+.project-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-summary .project-name{
+    border-left: 8px solid blue;   
+    padding-left: 36px;
+}
+
+.project-name h3{
+    font-size: 22px;
+    color: blue;
+}
+
+.project-name span{
+    font-size: 14px;
+}
+
+.project-summary p{
+    margin-top: 30px;
+    line-height: 1.6;
+    padding:0px 40px;
+}
+
+/* media query starts from here  */
+
+@media only screen and (max-width:650px){
+    main{
+        padding-block: 40px;
+    }
+
+    .project-center{
+        width: 84%;
+    }
+
+    .project h2{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .project h2 span{
+        width: 16px;
+        margin-right: 6px;
+        height: 16px;
+    }
+
+    .project{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .project p{
+        font-size: 15px;
+    }
+
+    .project-summary P{
+        padding: 0PX 20px;
+    }
+}
+
+
+@media screen and (min-width:300px) and (max-width:950px) {
+
+    .project-center{
+        width: 70%;
+    }
+    
+    .project-first{
+        flex-direction: column-reverse;
+        margin-top: 20px;
+    }
+
+    .project-first .project-img{
+        width: 100%;
+    }
+
+    .project-first .project-summary{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width:651px) and (max-width:950px) {
+    main{
+        padding-top: 80px;
+    }
+}
+
+@media screen and (min-width:950px) and (max-width:1200px){
+    .project-center{
+        width: 70%;
+    }
+}

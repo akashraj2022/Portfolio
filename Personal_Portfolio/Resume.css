@@ -1,0 +1,163 @@
+.resume{
+    padding-bottom: 50px;
+}
+
+.resume h1{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+
+.resume h1 span{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.resume h2{
+    display: inline-block;
+    font-size: 28px;
+    float: left;
+}
+
+.resume button{
+    display: inline-block;
+    padding: 6px 25px;
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 20px;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    /* margin-left: auto; */
+    float: right;
+    text-align: right;
+    transition: all 0.5s;
+
+}
+
+.resume button:hover{
+    background-color: white;
+    transition: all 0.5s;
+    color: blue;
+}
+
+.work-first{
+    padding:80px 50px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 17px gray;
+    display: flex;
+    gap: 50px;
+    background-color: white;
+}
+
+.work-first .work-year{
+    width: 40%;
+}
+
+.work-first .work-summary{
+    width: 60%;
+}
+
+.work-year h2{
+    font-size: 24px;
+    color: blue;
+    margin-bottom: 16px;
+}
+
+.work-year h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.work-year p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.work-summary p{
+    margin-bottom: 20px;
+}
+
+.work-summary p:nth-child(1){
+    margin-top: 30px;
+}
+
+
+/* media query starts from here  */
+
+@media screen and (max-width:650px){
+    .resume h1{
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .resume h1 span{
+        width: 15px;
+        height: 15px;
+    }
+
+    .resume h2{
+        font-size: 20px;
+    }
+
+    .resume button{
+        padding: 4px 15px;
+        font-size: 15px;
+    }
+
+    .work-first{
+        margin-block: 40px;
+        gap: 20px;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .work-first .work-year{
+        width: 100%;
+    }
+
+    .work-first .work-summary{
+        width: 100%;
+    }
+
+    .work-first .work-summary p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
+
+@media screen  and (min-width:651px) and (max-width:950px){
+    .work-first{
+        
+    padding: 20px 40px;
+    gap: 0px;
+    flex-direction: column;
+    }
+
+    .project-center{
+        width: 70%;
+    }
+
+    .work-first .work-year{
+        width: 100%;
+    }
+
+    .work-first .work-summary{
+        width: 100%;
+    }
+
+    main{
+        padding-top: 80px;
+    }
+
+    .resume h1{
+        margin-bottom: 40px;
+    }
+}

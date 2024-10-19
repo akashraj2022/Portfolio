@@ -1,0 +1,87 @@
+.skill-heading h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skill-heading h1 span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.allskills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.allskills .skill-first{
+    /* width: 33%; */
+    text-align: center;
+    padding: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 17px gray;
+    
+}
+
+.skill-first:hover img{
+    transition: all 1s;
+    transform: scale(1.2);
+}
+
+.allskills img{
+    width: 150px;
+    height: 150px;
+    /* border-radius: 50%; */
+}
+
+
+.skill-first h2{
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.skill-first p{
+    font-size: 16px;
+}
+
+.skill-first:hover{
+    background-color: rgb(230, 218, 206);
+    transition: all 0.5s;
+    /* color: white; */
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* mobile query of skill page  */
+
+
+@media screen and (max-width:650px){
+    .allskills{
+        grid-template-columns: 1fr;
+    }
+
+    .skill-heading h2{
+        font-size: 28px;
+    }
+
+    .skill-heading h2 span{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width:800px)
+{
+    .project-center{
+        width: 85%;
+    }
+}

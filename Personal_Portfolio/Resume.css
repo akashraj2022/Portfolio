@@ -23,7 +23,7 @@
     float: left;
 }
 
-.resume button{
+.resume a{
     display: inline-block;
     padding: 6px 25px;
     border: 1px solid blue;

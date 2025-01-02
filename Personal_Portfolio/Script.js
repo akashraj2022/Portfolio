@@ -11,13 +11,13 @@ menu_icon.addEventListener('click',()=>{
     cross_icon.style.display="block";
     
     let body = document.querySelector('body');
-    // body.style.background = "white";
+    
 
     cross_icon.addEventListener('click',()=>{
         
         right_header.style.display="none";
         cross_icon.style.display="none";
-        // body.style.background='transparent';
+        
 
     })
 })
